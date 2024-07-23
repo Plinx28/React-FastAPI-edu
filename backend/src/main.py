@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from src.router import router as router_cmc
+from router import router as router_cmc
 
 app = FastAPI(title="Cryptocurrencies with React")
 
