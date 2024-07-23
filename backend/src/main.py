@@ -8,6 +8,7 @@ app = FastAPI(title="Cryptocurrencies with React")
 origins = [
     "http://localhost:5173",
     "http://127.0.0.1:5173",
+    "http://89.223.126.16"
 ]
 
 
