@@ -30,3 +30,8 @@ class CMCHTTPClient(HttpClient):
             result = await response.json()
             return result["data"][str(coin_id)]
 
+    async def __aenter__(self):
+        return self
+
+    async def __aexit__(self, exc_type, exc_value, traceback):
+        await self.session.close()
